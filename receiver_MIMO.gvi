@@ -261,6 +261,10 @@
                 <Label Id="1936" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1935" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 2" Top="[float]88" />
                 <Label Id="1939" IsVisualChild="[bool]False" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1932" Left="[float]1091" Locked="[bool]True" Text="[string]Training Sequences In" Top="[float]697" />
             </Cluster>
+            <ArrayViewer ArrayElement="[UIModel]2113" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="2116" Name="[string]Y" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=2110}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2113" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" />
+            </ArrayViewer>
         </FrontPanelUnplacedItems>
         <BlockDiagram Id="12">
             <DataAccessor Bounds="-355 540 40 15" DataItem="119" Id="14" Label="110">
@@ -466,7 +470,7 @@
                     <Wire Id="1495" Joints="N(1958:R2) v(-10) N(1681:L1)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="1496" Joints="N(1958:R3) N(1681:L3)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="1540" Joints="N(608:R3) h(5) v(25) N(1958:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="1613" Joints="N(28:22) h(351) v(105) N(1670:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1613" Joints="N(28:22) h(31) B(1) h(320) v(105) N(1670:L0) B(1) v(-70) N(2108:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="1616" Joints="N(585:R3) h(160) v(-100) N(1966:L3)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="1618" Joints="N(585:R2) h(150) v(-100) N(1966:L2)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="1619" Joints="N(1966:R2) h(-25) v(100) B(2) N(608:L2) B(2) v(260) h(165) N(1685:B0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -704,6 +708,22 @@
                     </MethodCall>
                     <Wire Id="2101" Joints="N(608:R1) h(15) v(25) h(131) v(30) N(2099:L0)" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="2102" Joints="N(2099:R0) h(55) v(-30) N(1958:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <PropertyNode Bounds="60 500 150 75" HasErrorTerminals="False" Id="2108" InstanceDataType="@1785820191_0" Template="List" Terminals="instance in=1613~0:5, instance out~150:5, c0t0v~150:35, c1t0v~150:50, c2t0v=2118~150:65" VerticalChunkCount="3">
+                        <p.PropertyItem IsWrite="False">
+                            <PathElement>t0</PathElement>
+                        </p.PropertyItem>
+                        <p.PropertyItem IsWrite="False">
+                            <PathElement>dt</PathElement>
+                        </p.PropertyItem>
+                        <p.PropertyItem IsWrite="False">
+                            <PathElement>Y</PathElement>
+                        </p.PropertyItem>
+                    </PropertyNode>
+                    <DataAccessor Bounds="285 525 40 15" DataItem="2110" Id="2115" Label="2117">
+                        <Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+                    </DataAccessor>
+                    <Wire Id="2118" Joints="N(2108:c2t0v) h(70) v(-35) N(2115:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <TextNode AttachedTo="2115" Bounds="330 525 7 16" Id="2117" Text="Y" xmlns="http://www.ni.com/PlatformFramework" />
                 </CaseStructure.Case>
                 <CaseStructure.Case Bounds="5 5 1481 1238" Id="23" Pattern="Error">
                     <Wire Id="99" Joints="N(24:23) h(1061) v(50) N(25:23)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -1300,22 +1320,22 @@
                 <Label Id="1918" LabelOwner="[UIModel]1917" Left="[float]9" Locked="[bool]True" Text="[string]Channel Response h_22" Top="[float]291" Visible="[bool]True" />
             </Cluster>
             <Label Id="1928" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1902" Left="[float]62" Locked="[bool]True" Text="[string]Channel Model Parameters" Top="[float]834" Visible="[bool]True" />
-            <Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-1081220314_0" Height="[float]297" Id="1996" Label="[UIModel]2010" Left="[float]1146" Top="[float]541" Value="{DataItemBinding Id=1995}" Width="[float]216">
+            <Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-1081220314_0" Height="[float]296" Id="1996" Label="[UIModel]2010" Left="[float]1146" Top="[float]541" Value="{DataItemBinding Id=1995}" Width="[float]216">
                 <NumericText BaseName="[string]Numeric" Height="[float]22" Id="1997" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2003" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=FFT\ size\ (N)}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
                 <NumericText BaseName="[string]Numeric" Height="[float]22" Id="1998" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2004" Left="[float]5" Top="[float]70" Value="{ClusterBinding FieldName=Length\ of\ CP\ (Lc)}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <ArrayViewer ArrayElement="[UIModel]2009" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]37" Id="1999" Label="[UIModel]2005" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]115" Value="{ClusterBinding FieldName=Null\ Tones}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <ArrayViewer ArrayElement="[UIModel]2009" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="1999" Label="[UIModel]2005" Left="[float]5" Orientation="[SMOrientation]Vertical" Rows="[int]1" Top="[float]115" Value="{ClusterBinding FieldName=Null\ Tones}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                     <p.DefaultElementValue>0</p.DefaultElementValue>
-                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2009" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" Name="[string]Child" Top="[float]7" Value="[uint]0" ValueType="[Type]UInt32" Width="[float]69" />
+                    <NumericText BaseName="[string]Numeric" Font="[SMFont]0,8.25," Height="[float]21" Id="2009" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" Name="[string]Child" Top="[float]7" Value="[uint]0" ValueType="[Type]UInt32" Width="[float]69" />
                 </ArrayViewer>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2000" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2006" Left="[float]5" Top="[float]175" Value="{ClusterBinding FieldName=Number\ of\ OFDM\ Symbols\ (derived)}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2001" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2007" Left="[float]5" Top="[float]220" Value="{ClusterBinding FieldName=Training\ Sequence\ FFT\ size}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2002" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2008" Left="[float]5" Top="[float]265" Value="{ClusterBinding FieldName=Training\ Sequence\ Length\ of\ CP}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2000" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2006" Left="[float]5" Top="[float]174" Value="{ClusterBinding FieldName=Number\ of\ OFDM\ Symbols\ (derived)}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2001" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2007" Left="[float]5" Top="[float]219" Value="{ClusterBinding FieldName=Training\ Sequence\ FFT\ size}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2002" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2008" Left="[float]5" Top="[float]264" Value="{ClusterBinding FieldName=Training\ Sequence\ Length\ of\ CP}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
                 <Label Id="2003" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1997" Left="[float]5" Locked="[bool]True" Text="[string]FFT size (N)" Top="[float]2" />
                 <Label Id="2004" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1998" Left="[float]5" Locked="[bool]True" Text="[string]Length of CP (Lc)" Top="[float]47" />
                 <Label Id="2005" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1999" Left="[float]5" Locked="[bool]True" Text="[string]Null Tones" Top="[float]92" />
-                <Label Id="2006" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2000" Left="[float]5" Locked="[bool]True" Text="[string]Number of OFDM Symbols (derived)" Top="[float]152" />
-                <Label Id="2007" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2001" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence FFT size" Top="[float]197" />
-                <Label Id="2008" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2002" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence Length of CP" Top="[float]242" />
+                <Label Id="2006" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2000" Left="[float]5" Locked="[bool]True" Text="[string]Number of OFDM Symbols (derived)" Top="[float]151" />
+                <Label Id="2007" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2001" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence FFT size" Top="[float]196" />
+                <Label Id="2008" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2002" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence Length of CP" Top="[float]241" />
             </Cluster>
             <Label Id="2010" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1996" Left="[float]1146" Locked="[bool]True" Text="[string]OFDM Parameters In" Top="[float]518" />
         </CPFrontPanel>
@@ -1693,6 +1713,7 @@
                 </Cluster>
             </p.DefaultValue>
         </DataItem>
+        <DataItem AdaptToDiagramType="True" DataType="ComplexDouble[]" Id="2110" Name="Y" />
         <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
             <p.TypeReference TypeId="-771384584_0">
                 <Class Id="1" Name="" Cluster="">

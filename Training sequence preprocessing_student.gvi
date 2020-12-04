@@ -130,11 +130,11 @@
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
             <TextNode AttachedTo="1114" Bounds="820 395 0 0" Id="1115" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <Comment Bounds="1110 445 84.8 28.8" Id="1145" xmlns="http://www.ni.com/MocCommon">
-                <p.Text>0;data(128)</p.Text>
+            <Comment Bounds="1110 445 78.4 28.8" Id="1145" xmlns="http://www.ni.com/MocCommon">
+                <p.Text>0;data(64)</p.Text>
             </Comment>
-            <Comment Bounds="1025 340 84.8 28.8" Id="1146" xmlns="http://www.ni.com/MocCommon">
-                <p.Text>data(128);0</p.Text>
+            <Comment Bounds="1025 340 78.4 28.8" Id="1146" xmlns="http://www.ni.com/MocCommon">
+                <p.Text>data(64);0</p.Text>
             </Comment>
             <BuildArray Bounds="685 240 40 120" ConcatenateInputs="True" Id="1147" Terminals="outArray=1216, c0t0v=1164, c1t0v=1164, c2t0v=1164, c3t0v=1164, c4t0v=1164, c5t0v=1164, c6t0v=1164, c7t0v=1164, c8t0v=1164, c9t0v=1164, c10t0v=1164, c11t0v=1164" VerticalChunkCount="12" />
             <Wire Id="1164" Joints="N(1074:c0t0v) h(5) v(-50) B(2) N(1147:c11t0v) B(2) v(-20) B(4) h(30) B(5) N(1147:c9t0v) B(5) v(10) N(1147:c10t0v) B(4) v(-10) B(9) N(1147:c8t0v) B(9) v(-10) B(11) N(1147:c7t0v) B(11) v(-10) B(13) N(1147:c6t0v) B(13) v(-10) B(15) N(1147:c5t0v) B(15) v(-10) B(17) N(1147:c4t0v) B(17) v(-10) B(19) N(1147:c3t0v) B(19) v(-10) B(21) N(1147:c2t0v) B(21) v(-10) B(23) N(1147:c1t0v) B(23) v(-10) N(1147:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -149,11 +149,11 @@
             </Literal>
             <TextNode AttachedTo="1200" Bounds="750 320 0 0" Id="1201" Text="index" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1202" Joints="N(1200:Out) N(1196:index0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Literal Bounds="755.2 350 44 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1203" Label="1204" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>128</p.Data>
+            <Literal Bounds="760 350 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1203" Label="1204" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>64</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <TextNode AttachedTo="1203" Bounds="755.2 350 0 0" Id="1204" Text="length" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1203" Bounds="760 350 0 0" Id="1204" Text="length" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1205" Joints="N(1203:Out) h(5) v(-20) N(1196:length0)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1206" Joints="N(1196:subarray) h(20) B(1) h(90) v(60) N(1083:c0t0v) B(1) v(-10) h(-60) v(-35) N(1076:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <ArraySubset Bounds="805 470 40 40" Id="1207" Terminals="array=1218, subarray=1215, index0=1211, length0=1214" />
@@ -163,11 +163,11 @@
             </Literal>
             <TextNode AttachedTo="1209" Bounds="735 485 0 0" Id="1210" Text="index" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1211" Joints="N(1209:Out) h(5) v(5) N(1207:index0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Literal Bounds="725.2 520 44 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1212" Label="1213" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>128</p.Data>
+            <Literal Bounds="730 520 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1212" Label="1213" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>64</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <TextNode AttachedTo="1212" Bounds="725.2 520 0 0" Id="1213" Text="length" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1212" Bounds="730 520 0 0" Id="1213" Text="length" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1214" Joints="N(1212:Out) h(5) v(-20) N(1207:length0)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1215" Joints="N(1207:subarray) h(10) B(1) h(130) v(-20) N(1091:c1t0v) B(1) v(-35) N(1089:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1216" Joints="N(1147:outArray) h(20) v(60) N(1196:array)" xmlns="http://www.ni.com/PlatformFramework" />

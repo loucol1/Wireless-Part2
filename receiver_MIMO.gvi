@@ -243,19 +243,6 @@
                 <Label Id="1478" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1475" Left="[float]5" Locked="[bool]True" Text="[string]Key Bit Sequence" Top="[float]0" />
                 <Label Id="1481" IsVisualChild="[bool]False" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1474" Left="[float]1254" Locked="[bool]True" Text="[string]queue out" Top="[float]981" />
             </Cluster>
-            <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-2013166653_0" Height="[float]174" Id="1932" Label="[UIModel]1939" Left="[float]1091" Top="[float]720" Value="{DataItemBinding Id=1940}" Width="[float]839">
-                <ArrayViewer ArrayElement="[UIModel]1937" BaseName="[string]Array" Columns="[int]11" Dimensions="[int]1" Height="[float]36" Id="1933" Label="[UIModel]1934" Left="[float]18" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]49" Value="{ClusterBinding FieldName=Length\ 11\ Zadoff\ Chu\ 1\ }" Width="[float]784" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                    <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="1937" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]383" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
-                </ArrayViewer>
-                <Label Id="1934" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1933" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 1 " Top="[float]26" />
-                <ArrayViewer ArrayElement="[UIModel]1938" BaseName="[string]Array" Columns="[int]11" Dimensions="[int]1" Height="[float]36" Id="1935" Label="[UIModel]1936" Left="[float]18" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]111" Value="{ClusterBinding FieldName=Length\ 11\ Zadoff\ Chu\ 2}" Width="[float]784" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                    <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="1938" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]251" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
-                </ArrayViewer>
-                <Label Id="1936" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1935" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 2" Top="[float]88" />
-                <Label Id="1939" IsVisualChild="[bool]False" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1932" Left="[float]1091" Locked="[bool]True" Text="[string]Training Sequences In" Top="[float]697" />
-            </Cluster>
             <ArrayViewer ArrayElement="[UIModel]2113" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Id="2116" Name="[string]Y" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Value="{DataItemBinding Id=2110}" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
                 <NumericText BaseName="[string]Numeric" Height="[float]22" Id="2113" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" />
@@ -645,10 +632,10 @@
                     </DataAccessor>
                     <TextNode AttachedTo="1881" Bounds="1330 705 120 16" Id="1882" Text="Received Constellation" xmlns="http://www.ni.com/PlatformFramework" />
                     <Wire Id="1901" Joints="N(625:R4) h(5) v(50) N(1881:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="1945" Joints="N(1667:22) N(2273:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="1946" Joints="N(2273:R0) N(558:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="1948" Joints="N(24:22) h(31) v(-30) h(5) N(2273:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-                    <Wire Id="1950" Joints="N(2273:R3) h(75) v(-20) N(558:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1945" Joints="N(1667:22) N(2278:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1946" Joints="N(2278:R0) N(558:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1948" Joints="N(24:22) h(31) v(-30) h(5) N(2278:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+                    <Wire Id="1950" Joints="N(2278:R3) h(75) v(-20) N(558:L4)" xmlns="http://www.ni.com/PlatformFramework" />
                     <MethodCall Bounds="960 700 40 40" Id="1958" Target="Alamouti_RX_student\.gvi">
                         <p.MethodDeclaration>
                             <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -911,7 +898,7 @@ for Packet Header/Tail</PathElement>
                     </Literal>
                     <Wire Id="2272" Joints="N(2270:Out) N(2259:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                     <TextNode AttachedTo="2270" Bounds="365 470 0 0" Id="2271" Text="Equalize Channel" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-                    <MethodCall Bounds="40 695 40 40" Id="2273" Target="Training\ sequence\ preprocessing_student\.gvi">
+                    <MethodCall Bounds="40 695 40 40" Id="2278" Target="Training\ sequence\ preprocessing_student_receiver\.gvi">
                         <p.MethodDeclaration>
                             <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
                                 <Parameter Id="L3" Desc="error in (no error)" />
@@ -1293,6 +1280,19 @@ for Packet Header/Tail</PathElement>
                 <Label Id="2008" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]2002" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence Length of CP" Top="[float]241" />
             </Cluster>
             <Label Id="2010" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1996" Left="[float]1146" Locked="[bool]True" Text="[string]OFDM Parameters In" Top="[float]518" />
+            <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-2013166653_0" Height="[float]174" Id="1932" Label="[UIModel]1939" Left="[float]1059" Top="[float]302" Value="{DataItemBinding Id=1940}" Width="[float]839">
+                <ArrayViewer ArrayElement="[UIModel]1937" BaseName="[string]Array" Columns="[int]11" Dimensions="[int]1" Height="[float]37" Id="1933" Label="[UIModel]1934" Left="[float]18" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]49" Value="{ClusterBinding FieldName=Length\ 11\ Zadoff\ Chu\ 1\ }" Width="[float]784" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                    <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="1937" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]712" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]-1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
+                </ArrayViewer>
+                <Label Id="1934" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1933" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 1 " Top="[float]26" />
+                <ArrayViewer ArrayElement="[UIModel]1938" BaseName="[string]Array" Columns="[int]11" Dimensions="[int]1" Height="[float]37" Id="1935" Label="[UIModel]1936" Left="[float]18" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]111" Value="{ClusterBinding FieldName=Length\ 11\ Zadoff\ Chu\ 2}" Width="[float]784" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                    <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="1938" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]448" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]-1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
+                </ArrayViewer>
+                <Label Id="1936" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1935" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 2" Top="[float]88" />
+            </Cluster>
+            <Label Id="1939" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]1932" Left="[float]1059" Locked="[bool]True" Text="[string]Training Sequences In" Top="[float]279" />
         </CPFrontPanel>
         <DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="119" Name="error in (no error)">
             <p.DefaultValue>
@@ -2269,38 +2269,6 @@ for Packet Header/Tail</PathElement>
                     </AttributeValues>
                 </Attributed>
             </p.TypeReference>
-            <p.TypeReference TypeId="-2013166653_0">
-                <Class Id="1" Name="" Cluster="">
-                    <ClosedGenericParameters />
-                    <GenericTypeDefinition>
-                        <Void />
-                    </GenericTypeDefinition>
-                    <BaseType>
-                        <Void />
-                    </BaseType>
-                    <Interfaces />
-                    <Members>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Length 11 Zadoff Chu 1 ">
-                            <DataType>
-                                <VariableArray>
-                                    <DereferenceType>
-                                        <ComplexDouble />
-                                    </DereferenceType>
-                                </VariableArray>
-                            </DataType>
-                        </Field>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Length 11 Zadoff Chu 2">
-                            <DataType>
-                                <VariableArray>
-                                    <DereferenceType>
-                                        <ComplexDouble />
-                                    </DereferenceType>
-                                </VariableArray>
-                            </DataType>
-                        </Field>
-                    </Members>
-                </Class>
-            </p.TypeReference>
             <p.TypeReference TypeId="-1661218382_0">
                 <Class Id="1" Name="" Cluster="">
                     <ClosedGenericParameters />
@@ -2991,6 +2959,38 @@ for Packet Header/Tail</PathElement>
                         <Field FieldAccessPolicy="ReadWrite" Name="Training Sequence Length of CP">
                             <DataType>
                                 <Int32 />
+                            </DataType>
+                        </Field>
+                    </Members>
+                </Class>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-2013166653_0">
+                <Class Id="1" Name="" Cluster="">
+                    <ClosedGenericParameters />
+                    <GenericTypeDefinition>
+                        <Void />
+                    </GenericTypeDefinition>
+                    <BaseType>
+                        <Void />
+                    </BaseType>
+                    <Interfaces />
+                    <Members>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Length 11 Zadoff Chu 1 ">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <ComplexDouble />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Length 11 Zadoff Chu 2">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <ComplexDouble />
+                                    </DereferenceType>
+                                </VariableArray>
                             </DataType>
                         </Field>
                     </Members>

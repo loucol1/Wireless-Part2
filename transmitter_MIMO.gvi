@@ -90,23 +90,6 @@
                 <Label Id="6357" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]6354" Left="[float]5" Locked="[bool]True" Text="[string]Key Bit Sequence" Top="[float]0" />
                 <Label Id="6360" IsVisualChild="[bool]False" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]6353" Left="[float]1127" Locked="[bool]True" Text="[string]queue out" Top="[float]1422" />
             </Cluster>
-            <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-1081220314_0" Height="[float]279" Id="9254" Name="[string]OFDM Paramters out" Top="[float]-1" Value="{DataItemBinding Id=9251}" Width="[float]148">
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9257" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9276" Left="[float]5" Top="[float]23" Value="{ClusterBinding FieldName=FFT\ size\ (N)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9260" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9277" Left="[float]5" Top="[float]65" Value="{ClusterBinding FieldName=Length\ of\ CP\ (Lc)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <ArrayViewer ArrayElement="[UIModel]9263" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="9266" Label="[UIModel]9278" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]107" Value="{ClusterBinding FieldName=Null\ Tones}" Width="[float]130" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                    <p.DefaultElementValue>0</p.DefaultElementValue>
-                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9263" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" />
-                </ArrayViewer>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9269" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9279" Left="[float]5" Top="[float]163" Value="{ClusterBinding FieldName=Number\ of\ OFDM\ Symbols\ (derived)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9272" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9280" Left="[float]5" Top="[float]205" Value="{ClusterBinding FieldName=Training\ Sequence\ FFT\ size}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9275" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9281" Left="[float]5" Top="[float]247" Value="{ClusterBinding FieldName=Training\ Sequence\ Length\ of\ CP}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-                <Label Id="9276" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9257" Left="[float]5" Locked="[bool]True" Text="[string]FFT size (N)" Top="[float]0" />
-                <Label Id="9277" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9260" Left="[float]5" Locked="[bool]True" Text="[string]Length of CP (Lc)" Top="[float]42" />
-                <Label Id="9278" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9266" Left="[float]5" Locked="[bool]True" Text="[string]Null Tones" Top="[float]84" />
-                <Label Id="9279" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9269" Left="[float]5" Locked="[bool]True" Text="[string]Number of OFDM Symbols (derived)" Top="[float]140" />
-                <Label Id="9280" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9272" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence FFT size" Top="[float]182" />
-                <Label Id="9281" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9275" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence Length of CP" Top="[float]224" />
-            </Cluster>
         </FrontPanelUnplacedItems>
         <BlockDiagram Id="12">
             <DataAccessor Bounds="-630 335 40 15" DataItem="106" Id="14" Label="98">
@@ -604,7 +587,7 @@
                                 <RangeLabeledDivisions Id="303" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
                                 <GridLines Id="601" />
                             </Axis>
-                            <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="298" Label="[string]Amplitude" MajorDivisions="[UIModel]599" MajorGridLines="[UIModel]600" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double">
+                            <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="298" Label="[string]Amplitude" MajorDivisions="[UIModel]599" MajorGridLines="[UIModel]600" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 2, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double">
                                 <RangeLabeledDivisions Id="599" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
                                 <GridLines Id="600" />
                             </Axis>
@@ -3295,7 +3278,7 @@
                                 <RangeLabeledDivisions Id="6173" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
                                 <GridLines Id="6174" />
                             </Axis>
-                            <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="3656" Label="[string]Amplitude" MajorDivisions="[UIModel]6175" MajorGridLines="[UIModel]6176" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double">
+                            <Axis Adjuster="[RangeAdjuster]FitLoosely" Id="3656" Label="[string]Amplitude" MajorDivisions="[UIModel]6175" MajorGridLines="[UIModel]6176" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 2, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double">
                                 <RangeLabeledDivisions Id="6175" LabelPresenter="[string]LVRelativeSeconds:&gt;&gt;0.0#E+0" />
                                 <GridLines Id="6176" />
                             </Axis>
@@ -5851,12 +5834,12 @@
             <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-2013166653_0" Height="[float]174" Id="9049" Label="[UIModel]9056" Left="[float]960" Top="[float]626" Value="{DataItemBinding Id=9057}" Width="[float]839">
                 <ArrayViewer ArrayElement="[UIModel]9054" BaseName="[string]Array" Columns="[int]11" Dimensions="[int]1" Height="[float]37" Id="9050" Label="[UIModel]9051" Left="[float]18" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]49" Value="{ClusterBinding FieldName=Length\ 11\ Zadoff\ Chu\ 1\ }" Width="[float]784" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                     <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9054" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]383" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
+                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9054" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]515" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
                 </ArrayViewer>
                 <Label Id="9051" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9050" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 1 " Top="[float]26" />
                 <ArrayViewer ArrayElement="[UIModel]9055" BaseName="[string]Array" Columns="[int]11" Dimensions="[int]1" Height="[float]37" Id="9052" Label="[UIModel]9053" Left="[float]18" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]111" Value="{ClusterBinding FieldName=Length\ 11\ Zadoff\ Chu\ 2}" Width="[float]784" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                     <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9055" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]317" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]31" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
+                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9055" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]1 + 0i" ValueType="[Type]ComplexDouble" Width="[float]64" />
                 </ArrayViewer>
                 <Label Id="9053" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9052" Left="[float]18" Locked="[bool]True" Text="[string]Length 11 Zadoff Chu 2" Top="[float]88" />
             </Cluster>
@@ -5879,6 +5862,24 @@
                 <Label Id="9226" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9220" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence Length of CP" Top="[float]242" />
             </Cluster>
             <Label Id="9228" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9214" Left="[float]1176" Locked="[bool]True" Text="[string]OFDM Parameters In" Top="[float]972" />
+            <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@-1081220314_0" Height="[float]279" Id="9254" Label="[UIModel]9287" Left="[float]1477" Top="[float]1013" Value="{DataItemBinding Id=9251}" Width="[float]206">
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9257" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9276" Left="[float]5" Top="[float]23" Value="{ClusterBinding FieldName=FFT\ size\ (N)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9260" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9277" Left="[float]5" Top="[float]65" Value="{ClusterBinding FieldName=Length\ of\ CP\ (Lc)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <ArrayViewer ArrayElement="[UIModel]9263" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]37" Id="9266" Label="[UIModel]9278" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]107" Value="{ClusterBinding FieldName=Null\ Tones}" Width="[float]131" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                    <p.DefaultElementValue>0</p.DefaultElementValue>
+                    <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9263" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" />
+                </ArrayViewer>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9269" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9279" Left="[float]5" Top="[float]163" Value="{ClusterBinding FieldName=Number\ of\ OFDM\ Symbols\ (derived)}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9272" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9280" Left="[float]5" Top="[float]205" Value="{ClusterBinding FieldName=Training\ Sequence\ FFT\ size}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="9275" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]9281" Left="[float]5" Top="[float]247" Value="{ClusterBinding FieldName=Training\ Sequence\ Length\ of\ CP}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Label Id="9276" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9257" Left="[float]5" Locked="[bool]True" Text="[string]FFT size (N)" Top="[float]0" />
+                <Label Id="9277" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9260" Left="[float]5" Locked="[bool]True" Text="[string]Length of CP (Lc)" Top="[float]42" />
+                <Label Id="9278" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9266" Left="[float]5" Locked="[bool]True" Text="[string]Null Tones" Top="[float]84" />
+                <Label Id="9279" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9269" Left="[float]5" Locked="[bool]True" Text="[string]Number of OFDM Symbols (derived)" Top="[float]140" />
+                <Label Id="9280" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9272" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence FFT size" Top="[float]182" />
+                <Label Id="9281" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9275" Left="[float]5" Locked="[bool]True" Text="[string]Training Sequence Length of CP" Top="[float]224" />
+            </Cluster>
+            <Label Id="9287" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]9254" Left="[float]1477" Locked="[bool]True" Text="[string]OFDM Paramters out" Top="[float]990" />
         </CPFrontPanel>
         <DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="106" Name="&quot;error in &quot;">
             <p.DefaultValue>
@@ -6217,54 +6218,6 @@
                         <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
                     </AttributeValues>
                 </Attributed>
-            </p.TypeReference>
-            <p.TypeReference TypeId="-1081220314_0">
-                <Class Id="1" Name="" Cluster="">
-                    <ClosedGenericParameters />
-                    <GenericTypeDefinition>
-                        <Void />
-                    </GenericTypeDefinition>
-                    <BaseType>
-                        <Void />
-                    </BaseType>
-                    <Interfaces />
-                    <Members>
-                        <Field FieldAccessPolicy="ReadWrite" Name="FFT size (N)">
-                            <DataType>
-                                <Int32 />
-                            </DataType>
-                        </Field>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Length of CP (Lc)">
-                            <DataType>
-                                <Int32 />
-                            </DataType>
-                        </Field>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Null Tones">
-                            <DataType>
-                                <VariableArray>
-                                    <DereferenceType>
-                                        <UInt32 />
-                                    </DereferenceType>
-                                </VariableArray>
-                            </DataType>
-                        </Field>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Number of OFDM Symbols (derived)">
-                            <DataType>
-                                <Int32 />
-                            </DataType>
-                        </Field>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Training Sequence FFT size">
-                            <DataType>
-                                <Int32 />
-                            </DataType>
-                        </Field>
-                        <Field FieldAccessPolicy="ReadWrite" Name="Training Sequence Length of CP">
-                            <DataType>
-                                <Int32 />
-                            </DataType>
-                        </Field>
-                    </Members>
-                </Class>
             </p.TypeReference>
             <p.TypeReference TypeId="-476918808_0">
                 <VariableArray>
@@ -6763,6 +6716,54 @@
                                         <ComplexDouble />
                                     </DereferenceType>
                                 </VariableArray>
+                            </DataType>
+                        </Field>
+                    </Members>
+                </Class>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-1081220314_0">
+                <Class Id="1" Name="" Cluster="">
+                    <ClosedGenericParameters />
+                    <GenericTypeDefinition>
+                        <Void />
+                    </GenericTypeDefinition>
+                    <BaseType>
+                        <Void />
+                    </BaseType>
+                    <Interfaces />
+                    <Members>
+                        <Field FieldAccessPolicy="ReadWrite" Name="FFT size (N)">
+                            <DataType>
+                                <Int32 />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Length of CP (Lc)">
+                            <DataType>
+                                <Int32 />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Null Tones">
+                            <DataType>
+                                <VariableArray>
+                                    <DereferenceType>
+                                        <UInt32 />
+                                    </DereferenceType>
+                                </VariableArray>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Number of OFDM Symbols (derived)">
+                            <DataType>
+                                <Int32 />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Training Sequence FFT size">
+                            <DataType>
+                                <Int32 />
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="Training Sequence Length of CP">
+                            <DataType>
+                                <Int32 />
                             </DataType>
                         </Field>
                     </Members>

@@ -14,8 +14,8 @@
                     <Rectangle EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Id="647" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
                     <Rectangle EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#ff646464" Height="[float]13" Id="648" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Stroke="[SMSolidColorBrush]#ff000000" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
                     <Text Font="[SMFont]0,6," Foreground="[SMColor]#ffffffff" Id="649" Left="[float]2" Text="[string]  Student" TextWrapping="[TextWrapping]NoWrap" Top="[float]1" />
-                    <Text Font="[SMFont]0,6," Id="650" Left="[float]7" Text="[string]    TS" TextWrapping="[TextWrapping]NoWrap" Top="[float]14" />
-                    <Text Font="[SMFont]0,6," Id="651" Left="[float]8" Text="[string]preproc" TextWrapping="[TextWrapping]NoWrap" Top="[float]23" />
+                    <Text Font="[SMFont]0,6," Id="650" Left="[float]7" Text="[string]    TS" TextWrapping="[TextWrapping]NoWrap" Top="[float]11" />
+                    <Text Font="[SMFont]0,6," Id="651" Left="[float]8" Text="[string]preproc&#xD;&#xA;receive" TextWrapping="[TextWrapping]NoWrap" Top="[float]17" />
                 </Canvas>
             </IconPanel>
         </Icon>
@@ -111,10 +111,10 @@
             <InitializeArray Bounds="895 210 40 30" Id="1078" Terminals="element=1082, outArray=1176, c0t0v=1079" />
             <Wire Id="1079" Joints="N(1076:size(s\)) h(5) v(-35) N(1078:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1082" Joints="N(1112:Out) h(5) v(25) h(-11.7999878) v(10) N(1078:element)" xmlns="http://www.ni.com/PlatformFramework" />
-            <BuildArray Bounds="1095 320 40 20" ConcatenateInputs="True" Id="1083" Terminals="outArray=1297, c0t0v=1318, c1t0v=1176" VerticalChunkCount="2" />
+            <BuildArray Bounds="975 360 40 20" ConcatenateInputs="True" Id="1083" Terminals="outArray=1297, c0t0v=1206, c1t0v=1176" VerticalChunkCount="2" />
             <ArraySize Bounds="860 435 40 20" Id="1089" />
             <InitializeArray Bounds="945 395 40 30" Id="1090" Terminals="element=1096, outArray=1191, c0t0v=1093" />
-            <BuildArray Bounds="1060 440 40 20" ConcatenateInputs="True" Id="1091" Terminals="outArray=1301, c0t0v=1191, c1t0v=1320" VerticalChunkCount="2" />
+            <BuildArray Bounds="1060 440 40 20" ConcatenateInputs="True" Id="1091" Terminals="outArray=1301, c0t0v=1191, c1t0v=1215" VerticalChunkCount="2" />
             <Wire Id="1093" Joints="N(1089:size(s\)) h(35) v(-30) N(1090:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1096" Joints="N(1114:Out) N(1090:element)" xmlns="http://www.ni.com/PlatformFramework" />
             <BuildCluster Bounds="1185 390 40 20" Id="1103" Terminals="outCluster=1106, c0t0v=1297, c1t0v=1301" VerticalChunkCount="2" />
@@ -139,10 +139,10 @@
             <BuildArray Bounds="685 240 40 120" ConcatenateInputs="True" Id="1147" Terminals="outArray=1216, c0t0v=1164, c1t0v=1164, c2t0v=1164, c3t0v=1164, c4t0v=1164, c5t0v=1164, c6t0v=1164, c7t0v=1164, c8t0v=1164, c9t0v=1164, c10t0v=1164, c11t0v=1164" VerticalChunkCount="12" />
             <Wire Id="1164" Joints="N(1074:c0t0v) h(5) v(-50) B(2) N(1147:c11t0v) B(2) v(-20) B(4) h(30) B(5) N(1147:c9t0v) B(5) v(10) N(1147:c10t0v) B(4) v(-10) B(9) N(1147:c8t0v) B(9) v(-10) B(11) N(1147:c7t0v) B(11) v(-10) B(13) N(1147:c6t0v) B(13) v(-10) B(15) N(1147:c5t0v) B(15) v(-10) B(17) N(1147:c4t0v) B(17) v(-10) B(19) N(1147:c3t0v) B(19) v(-10) B(21) N(1147:c2t0v) B(21) v(-10) B(23) N(1147:c1t0v) B(23) v(-10) N(1147:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1166" Joints="N(1074:c1t0v) h(30) v(5) B(2) N(1177:c0t0v) B(2) v(10) B(4) N(1177:c1t0v) B(4) v(10) B(6) N(1177:c2t0v) B(6) v(10) B(8) N(1177:c3t0v) B(8) v(10) B(10) N(1177:c4t0v) B(10) v(10) B(12) N(1177:c5t0v) B(12) v(10) B(14) N(1177:c6t0v) B(14) v(10) B(16) N(1177:c7t0v) B(16) v(10) B(18) N(1177:c8t0v) B(18) v(10) B(20) N(1177:c9t0v) B(20) v(10) B(22) N(1177:c10t0v) B(22) v(10) N(1177:c11t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1176" Joints="N(1078:outArray) h(15) v(120) N(1083:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1176" Joints="N(1078:outArray) h(15) v(160) N(1083:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <BuildArray Bounds="670 420 40 120" ConcatenateInputs="True" Id="1177" Terminals="outArray=1218, c0t0v=1166, c1t0v=1166, c2t0v=1166, c3t0v=1166, c4t0v=1166, c5t0v=1166, c6t0v=1166, c7t0v=1166, c8t0v=1166, c9t0v=1166, c10t0v=1166, c11t0v=1166" VerticalChunkCount="12" />
             <Wire Id="1191" Joints="N(1090:outArray) h(65) v(45) N(1091:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <ArraySubset Bounds="820 300 40 40" Id="1196" Terminals="array=1216, subarray=1302, index0=1202, length0=1205" />
+            <ArraySubset Bounds="820 300 40 40" Id="1196" Terminals="array=1216, subarray=1206, index0=1202, length0=1205" />
             <Literal Bounds="750 320 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1200" Label="1201" xmlns="http://www.ni.com/MocCommon">
                 <p.Data>0</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
@@ -155,7 +155,8 @@
             </Literal>
             <TextNode AttachedTo="1203" Bounds="760 350 0 0" Id="1204" Text="length" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1205" Joints="N(1203:Out) h(5) v(-20) N(1196:length0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <ArraySubset Bounds="805 470 40 40" Id="1207" Terminals="array=1218, subarray=1319, index0=1211, length0=1214" />
+            <Wire Id="1206" Joints="N(1196:subarray) h(20) B(1) h(90) v(60) N(1083:c0t0v) B(1) v(-10) h(-60) v(-35) N(1076:array)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArraySubset Bounds="805 470 40 40" Id="1207" Terminals="array=1218, subarray=1215, index0=1211, length0=1214" />
             <Literal Bounds="735 485 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1209" Label="1210" xmlns="http://www.ni.com/MocCommon">
                 <p.Data>0</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
@@ -168,42 +169,11 @@
             </Literal>
             <TextNode AttachedTo="1212" Bounds="730 520 0 0" Id="1213" Text="length" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1214" Joints="N(1212:Out) h(5) v(-20) N(1207:length0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1215" Joints="N(1207:subarray) h(10) B(1) h(130) v(-20) N(1091:c1t0v) B(1) v(-35) N(1089:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1216" Joints="N(1147:outArray) h(20) v(60) N(1196:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1218" Joints="N(1177:outArray) h(90) v(50) N(1207:array)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1297" Joints="N(1083:outArray) h(45) v(70) N(1103:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1297" Joints="N(1083:outArray) h(5) v(-20) h(160) v(50) N(1103:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1301" Joints="N(1091:outArray) h(10) v(-35) h(60) v(-5) N(1103:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1302" Joints="N(1196:subarray) h(20) v(-25) B(2) h(-60) v(-20) N(1076:array) B(2) v(-10) N(1303:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <InverseComplexFFT Bounds="995 265 50 50" Id="1303" Target="Inverse\ Complex\ FFT\.gvi">
-                <p.MethodDeclaration>
-                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-                        <Parameter Id="L0" Desc="FFT {x}" />
-                        <Parameter Id="L1" Desc="shift?" />
-                        <Parameter Id="R0" Desc="x" />
-                        <Parameter Id="R4" Desc="error" />
-                    </MethodDeclaration>
-                </p.MethodDeclaration>
-                <Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Int32" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-            </InverseComplexFFT>
-            <Wire Id="1318" Joints="N(1303:R0) h(65) v(45) h(-20) v(10) N(1083:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1319" Joints="N(1207:subarray) h(10) B(1) v(-35) N(1089:array) B(1) v(20) N(1321:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1320" Joints="N(1321:R0) h(5) v(-40) N(1091:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <InverseComplexFFT Bounds="930 490 50 50" Id="1321" Target="Inverse\ Complex\ FFT\.gvi">
-                <p.MethodDeclaration>
-                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-                        <Parameter Id="L0" Desc="FFT {x}" />
-                        <Parameter Id="L1" Desc="shift?" />
-                        <Parameter Id="R0" Desc="x" />
-                        <Parameter Id="R4" Desc="error" />
-                    </MethodDeclaration>
-                </p.MethodDeclaration>
-                <Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-                <Terminal DataType="Int32" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
-            </InverseComplexFFT>
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000" />
         <DataItem CallDirection="Input" CallIndex="1" DataType="@-2013166653_0" Id="1023" Name="Training Sequences in">

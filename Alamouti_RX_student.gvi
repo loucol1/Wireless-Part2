@@ -198,10 +198,9 @@
             <Comment Bounds="-630 310 48 28.8" Id="1541" xmlns="http://www.ni.com/MocCommon">
                 <p.Text>a3[k]</p.Text>
             </Comment>
-            <Add Bounds="-475 195 30 60" Id="1542" Terminals="o=1549, c0t0v=1554, c1t0v=1557, c2t0v=1560, c3t0v=1563" VerticalChunkCount="4" />
+            <Add Bounds="-475 195 30 60" Id="1542" Terminals="o=1818, c0t0v=1554, c1t0v=1557, c2t0v=1560, c3t0v=1563" VerticalChunkCount="4" />
             <Divide Bounds="505 915 30 30" Id="1547" />
-            <Wire Id="1548" Joints="N(1498:outArray) h(5) v(-10) N(1547:x)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1549" Joints="N(1542:o) h(940) v(725) N(1547:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1548" Joints="N(1498:outArray) h(5) v(-10) B(2) N(1547:x) B(2) v(-50) h(-40) v(-20) N(1820:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1550" Joints="N(1547:x/y) h(20) v(-15) N(632:Value)" xmlns="http://www.ni.com/PlatformFramework" />
             <Square Bounds="-585 155 30 30" Id="1551" />
             <Wire Id="1553" Joints="N(1527:abs(x\)) h(70) v(30) N(1551:x)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -422,7 +421,7 @@
             <Wire Id="1737" Joints="N(1736:Out) h(5) v(15) N(1734:y)" xmlns="http://www.ni.com/PlatformFramework" />
             <TextNode AttachedTo="1736" Bounds="-365 950 0 0" Id="1738" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1739" Joints="N(1726:R0) h(15) v(60) N(1473:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1740" Joints="N(1397:c0t0v) h(14) v(-40) h(96) v(10) h(55) B(5) h(75) B(6) h(20) v(-10) N(1401:x + iy) B(6) v(625) N(1741:L0) B(5) v(-275) N(1527:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1740" Joints="N(1397:c0t0v) h(14) v(-25) h(151) B(3) h(75) B(4) h(20) v(-15) N(1401:x + iy) B(4) v(620) N(1741:L0) B(3) v(-280) N(1527:x)" xmlns="http://www.ni.com/PlatformFramework" />
             <MethodCall Bounds="-350 1035 50 50" Id="1741" Target="Repeat\.gvi">
                 <p.MethodDeclaration>
                     <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -523,6 +522,42 @@
             <TextNode AttachedTo="1810" Bounds="-1795 1060 0 0" Id="1811" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1812" Joints="N(1810:Out) h(5) v(-5) N(1808:y)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1813" Joints="N(1808:x/y) h(5) v(80) h(525) v(-50) B(4) h(-15) v(-140) N(1806:c0t0v) B(4) v(-30) N(1803:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <MethodCall Bounds="-140 390 50 50" Id="1816" Target="Repeat\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Array" />
+                        <Parameter Id="L2" Desc="Numeric" />
+                        <Parameter Id="R0" Desc="output array" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="560 750 50 50" Id="1817" Target="Repeat\.gvi">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="Array" />
+                        <Parameter Id="L2" Desc="Numeric" />
+                        <Parameter Id="R0" Desc="output array" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Double" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <Wire Id="1818" Joints="N(1542:o) h(900) v(545) N(1817:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1819" Joints="N(1817:R0) h(5) v(90) h(-15) v(60) h(-105) v(30) N(1547:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ArraySize Bounds="375 845 40 20" Id="1820" />
+            <Divide Bounds="460 825 30 30" Id="1822" />
+            <Wire Id="1823" Joints="N(1820:size(s\)) h(5) v(-30) N(1822:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="410 875 39.2 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1824" Label="1825" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4050000000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="1824" Bounds="410 875 0 0" Id="1825" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1826" Joints="N(1824:Out) h(5) v(-35) N(1822:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1827" Joints="N(1822:x/y) h(65) v(-65) N(1817:L2)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
             <Cluster BaseName="[string]Error In" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="101" Label="[UIModel]138" Left="[float]349" Top="[float]33" Value="{DataItemBinding Id=99}" Width="[float]138">

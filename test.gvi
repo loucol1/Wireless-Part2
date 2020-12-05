@@ -187,68 +187,81 @@
             <TextNode AttachedTo="138" Bounds="245.000015 480 0 0" Id="139" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="140" Joints="N(138:Out) h(5) v(-20) N(136:y)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="141" Joints="N(136:x/y) h(90) v(-35) N(135:x)" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="95 715 40 15" DataItem="166" Id="167" Label="170">
+            <DataAccessor Bounds="15 735 40 15" DataItem="166" Id="167" Label="170">
                 <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
-            <TextNode AttachedTo="167" Bounds="62 715 28 16" Id="170" Text="Array" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="190" Joints="N(167:Value) h(95) v(-5) h(38) v(75) N(203:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="201" Joints="N(203:outArray) h(95) v(5) h(155) v(15) N(212:array)" xmlns="http://www.ni.com/PlatformFramework" />
-            <ReshapeArray Bounds="275 785 40 40" Id="203" Terminals="inArray=190, outArray=201, c0t0v=207, c1t0v=210" VerticalChunkCount="2" />
-            <Literal Bounds="205.000015 805 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="205" Label="206" xmlns="http://www.ni.com/MocCommon">
+            <TextNode AttachedTo="167" Bounds="-18 735 28 16" Id="170" Text="Array" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="201" Joints="N(266:outArray) h(20) v(15) h(38) v(75) h(62) v(30) N(261:255)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="85 745 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="205" Label="206" xmlns="http://www.ni.com/MocCommon">
                 <p.Data>2</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <TextNode AttachedTo="205" Bounds="205.000015 805 0 0" Id="206" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="207" Joints="N(205:Out) N(203:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Literal Bounds="200.000015 840 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="208" Label="209" xmlns="http://www.ni.com/MocCommon">
+            <TextNode AttachedTo="205" Bounds="85 745 0 0" Id="206" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="207" Joints="N(205:Out) h(20.8000031) B(1) N(257:255) B(1) v(-30) N(266:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="100 810 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="208" Label="209" xmlns="http://www.ni.com/MocCommon">
                 <p.Data>4</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <TextNode AttachedTo="208" Bounds="200.000015 840 0 0" Id="209" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="210" Joints="N(208:Out) h(25.8000031) v(-25) N(203:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <ArrayIndex Bounds="570 805 40 40" Id="212" Rank="2" Terminals="array=201, c0t0v=216, c0t1v, c0t2v=225" />
-            <Literal Bounds="500 810 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="214" Label="215" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>1</p.Data>
-                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
-            </Literal>
-            <TextNode AttachedTo="214" Bounds="500 810 0 0" Id="215" Text="row index" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="216" Joints="N(214:Out) h(5) v(15) N(212:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="725 790 40 15" DataItem="217" Id="222" Label="224">
-                <Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-            </DataAccessor>
-            <TextNode AttachedTo="222" Bounds="770 790 46 16" Id="224" Text="subarray" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="225" Joints="N(212:c0t2v) h(110) v(-35) N(222:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Multiply Bounds="405 945 30 30" Id="227" Terminals="o=251, c0t0v=230, c1t0v=242" />
+            <TextNode AttachedTo="208" Bounds="100 810 0 0" Id="209" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="210" Joints="N(208:Out) h(25.8000031) v(-85) N(266:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Multiply Bounds="155 1005 30 30" Id="227" Terminals="o=251, c0t0v=230, c1t0v=242" />
             <Wire Id="230" Joints="N(232:Value) N(227:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="215 945 40 15" DataItem="231" Id="232" Label="235">
+            <DataAccessor Bounds="-35 1005 40 15" DataItem="231" Id="232" Label="235">
                 <Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
-            <TextNode AttachedTo="232" Bounds="170 945 40 16" Id="235" Text="Array_2" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="200 985 40 15" DataItem="239" Id="237" Label="238">
+            <TextNode AttachedTo="232" Bounds="-80 1005 40 16" Id="235" Text="Array_2" xmlns="http://www.ni.com/PlatformFramework" />
+            <DataAccessor Bounds="-50 1045 40 15" DataItem="239" Id="237" Label="238">
                 <Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
-            <TextNode AttachedTo="237" Bounds="155 985 40 16" Id="238" Text="Array_3" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="237" Bounds="-95 1045 40 16" Id="238" Text="Array_3" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="242" Joints="N(237:Value) h(160) v(-25) N(227:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-            <DataAccessor Bounds="510 955 40 15" DataItem="243" Id="248" Label="250">
+            <DataAccessor Bounds="260 1015 40 15" DataItem="243" Id="248" Label="250">
                 <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
             </DataAccessor>
-            <TextNode AttachedTo="248" Bounds="555 955 42 16" Id="250" Text="product" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="248" Bounds="305 1015 42 16" Id="250" Text="product" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="251" Joints="N(227:o) N(248:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ForLoop Bounds="448 743 379 180" DiagramId="256" Id="255">
+                <ForLoop.Iteration Bounds="5 150 15 15" Id="258" />
+                <ArrayIndex Bounds="115 70 40 40" Id="212" Rank="2" Terminals="array=260, c0t0v=216, c0t1v, c0t2v=225" />
+                <Literal Bounds="45 90 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="214" Label="215" xmlns="http://www.ni.com/MocCommon">
+                    <p.Data>1</p.Data>
+                    <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+                </Literal>
+                <Wire Id="216" Joints="N(214:Out) N(212:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="225" Joints="N(212:c0t2v) h(110) v(-30) N(264:256)" xmlns="http://www.ni.com/PlatformFramework" />
+                <TextNode AttachedTo="214" Bounds="45 90 0 0" Id="215" Text="row index" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="260" Joints="N(261:256) N(212:array)" xmlns="http://www.ni.com/PlatformFramework" />
+                <ForLoop.Count Bounds="1 1 15 15" Docking="Left" Id="257" Terminals="255=207, 256" />
+                <ForLoop.Tunnel Bounds="-5 72 13 10" Docking="Left" Id="261" Terminals="255=201, 256=260" />
+                <ForLoop.Tunnel AutoIndex="True" Bounds="369 62 13 10" Docking="Right" Id="264" Terminals="255=263, 256=225" />
+            </ForLoop>
+            <DataAccessor Bounds="890 805 40 15" DataItem="217" Id="222" Label="224">
+                <Terminal DataType="Double[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="222" Bounds="935 805 46 16" Id="224" Text="subarray" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="263" Joints="N(264:255) N(222:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+            <InitializeArray Bounds="170 695 40 40" Id="266" Terminals="element=271, outArray=201, c0t0v=207, c1t0v=210" VerticalChunkCount="2" />
+            <Literal Bounds="85 690 39.2 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="269" Label="270" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4014000000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="269" Bounds="85 690 0 0" Id="270" Text="element" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="271" Joints="N(269:Out) h(5) v(5) N(266:element)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
             <ArrayViewer ArrayElement="[UIModel]169" Columns="[int]1" Dimensions="[int]1" ElementType="[Type]Double" Height="[float]202" Id="168" Label="[UIModel]173" Left="[float]524" Orientation="[SMOrientation]Vertical" Rows="[int]7" Top="[float]208" Value="{DataItemBinding Id=166}" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                <NumericText Height="[float]25" Id="169" Left="[float]53" Top="[float]7" Value="[ComplexDouble]1 + 0.5i" ValueType="[Type]ComplexDouble" Width="[float]60" />
+                <NumericText Height="[float]25" Id="169" Left="[float]53" Top="[float]88" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]60" />
             </ArrayViewer>
             <Label Id="173" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]168" Left="[float]524" Locked="[bool]True" Text="[string]Array" Top="[float]185" />
-            <ArrayViewer ArrayElement="[UIModel]220" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]157" Id="223" Label="[UIModel]226" Left="[float]768" Orientation="[SMOrientation]Vertical" Rows="[int]6" Top="[float]233" Value="{DataItemBinding Id=217}" Width="[float]131" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-                <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="220" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" Name="[string]Child" Top="[float]127" Value="[ComplexDouble]0 + 0i" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" />
+            <ArrayViewer ArrayElement="[UIModel]220" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]2" Height="[float]157" Id="223" IndexEditorWidth="[double]54.79998779296875" IsFixedSize="[bool]False" Label="[UIModel]226" Left="[float]756" Orientation="[SMOrientation]Vertical" Rows="[int]6" Top="[float]233" Value="{DataItemBinding Id=217}" Width="[float]144" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="220" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]65" Name="[string]Child" Top="[float]31" Value="[double]5" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" />
             </ArrayViewer>
-            <Label Id="226" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]223" Left="[float]768" Locked="[bool]True" Text="[string]subarray" Top="[float]210" />
+            <Label Id="226" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]223" Left="[float]756" Locked="[bool]True" Text="[string]subarray" Top="[float]210" />
             <ArrayViewer ArrayElement="[UIModel]234" Columns="[int]1" Dimensions="[int]1" ElementType="[Type]Double" Height="[float]175" Id="233" Label="[UIModel]252" Left="[float]191" Orientation="[SMOrientation]Vertical" Rows="[int]6" Top="[float]262" Value="{DataItemBinding Id=231}" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0x0</p.DefaultElementValue>
-                <NumericText Height="[float]25" Id="234" Left="[float]53" Top="[float]34" Value="[double]2" Width="[float]60" />
+                <NumericText Height="[float]25" Id="234" Left="[float]53" Top="[float]34" Value="[double]0" Width="[float]60" />
             </ArrayViewer>
             <Label Id="252" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]233" Left="[float]191" Locked="[bool]True" Text="[string]Array_2" Top="[float]239" />
             <ArrayViewer ArrayElement="[UIModel]241" Columns="[int]1" Dimensions="[int]1" ElementType="[Type]Double" Height="[float]93" Id="240" Label="[UIModel]253" Left="[float]219" Orientation="[SMOrientation]Vertical" Rows="[int]3" Top="[float]581" Value="{DataItemBinding Id=239}" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
@@ -268,7 +281,7 @@
                 <Array Lengths="0" />
             </p.DefaultValue>
         </DataItem>
-        <DataItem AdaptToDiagramType="True" DataType="ComplexDouble[]" Id="217" Name="subarray" />
+        <DataItem AdaptToDiagramType="True" DataType="Double[,]" Id="217" Name="subarray" />
         <DataItem AdaptToDiagramType="True" DataType="Double[]" Id="231" Name="Array_2">
             <p.DefaultValue>
                 <Array Lengths="0" />

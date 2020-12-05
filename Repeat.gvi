@@ -72,16 +72,16 @@
             <Wire Id="140" Joints="N(139:o) h(10) v(-20) N(127:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
-            <ArrayViewer ArrayElement="[UIModel]73" Columns="[int]1" Dimensions="[int]1" ElementType="[Type]Double" Height="[float]93" Id="72" Label="[UIModel]116" Left="[float]296" Orientation="[SMOrientation]Vertical" Rows="[int]3" Top="[float]77" Value="{DataItemBinding Id=70}" Width="[float]120" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+            <ArrayViewer ArrayElement="[UIModel]73" Columns="[int]1" Dimensions="[int]1" ElementType="[Type]Double" Height="[float]175" Id="72" Label="[UIModel]116" Left="[float]296" Orientation="[SMOrientation]Vertical" Rows="[int]6" Top="[float]77" Value="{DataItemBinding Id=70}" Width="[float]208" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                <NumericText Height="[float]25" Id="73" Left="[float]53" Top="[float]88" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]60" />
+                <NumericText Height="[float]25" Id="73" Left="[float]53" Top="[float]7" Value="[ComplexDouble]0.0375 + 2.5i" ValueType="[Type]ComplexDouble" Width="[float]147" />
             </ArrayViewer>
             <Label Id="116" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]72" Left="[float]296" Locked="[bool]True" Text="[string]Array" Top="[float]54" />
             <NumericText Height="[float]22" Id="77" Label="[UIModel]117" Left="[float]524" Top="[float]77" Value="{DataItemBinding Id=75}" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
             <Label Id="117" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]77" Left="[float]524" Locked="[bool]True" Text="[string]Numeric" Top="[float]54" />
             <ArrayViewer ArrayElement="[UIModel]133" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]229" Id="136" IsFixedSize="[bool]False" Label="[UIModel]143" Left="[float]703" Orientation="[SMOrientation]Vertical" Rows="[int]9" Top="[float]85" Value="{DataItemBinding Id=130}" Width="[float]131" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
                 <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
-                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="133" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" Name="[string]Child" Top="[float]199" Value="[ComplexDouble]3 + 0i" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" />
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="133" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Left="[float]53" Name="[string]Child" Top="[float]79" Value="[ComplexDouble]NaN + NaNi" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" />
             </ArrayViewer>
             <Label Id="143" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]136" Left="[float]703" Locked="[bool]True" Text="[string]output array" Top="[float]62" />
         </CPFrontPanel>

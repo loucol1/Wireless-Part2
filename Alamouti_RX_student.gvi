@@ -133,21 +133,17 @@
             <Comment Bounds="-860 685 84.8 28.8" Id="1443" xmlns="http://www.ni.com/MocCommon">
                 <p.Text>R1[k],R5[k]</p.Text>
             </Comment>
-            <Wire Id="1444" Joints="N(1614:1589) h(286) v(-50) h(260) B(3) h(265) v(-95) h(-5) v(-20) B(7) N(1672:array) B(7) v(-10) h(90) v(-30) N(1452:c1t0v) B(3) v(415) h(160) B(14) N(1473:c1t0v) B(14) v(-40) N(1733:array)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1445" Joints="N(1626:1589) h(66) v(-60) N(1455:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1448" Joints="N(1670:1640) h(89) v(-95) h(375) v(-70) h(50) B(5) h(250) B(6) N(1459:c1t0v) B(6) v(-25) N(1706:array) B(5) v(555) h(115) B(11) N(1483:c1t0v) B(11) v(-45) N(1758:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Comment Bounds="-975 800 88 28.8" Id="1449" xmlns="http://www.ni.com/MocCommon">
                 <p.Text>R2[k], R6[k]</p.Text>
             </Comment>
-            <Wire Id="1450" Joints="N(1667:1640) h(329) v(-175) N(1463:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
             <Comment Bounds="-1040 980 84.8 28.8" Id="1451" xmlns="http://www.ni.com/MocCommon">
                 <p.Text>R3[k],R7[k]</p.Text>
             </Comment>
-            <Multiply Bounds="35 425 30 30" Id="1452" Terminals="o=1468, c0t0v=1679, c1t0v=1444" />
+            <Multiply Bounds="35 425 30 30" Id="1452" Terminals="o=1468, c0t0v=1679, c1t0v=1786" />
             <Multiply Bounds="-150 670 30 30" Id="1454" Terminals="o=1469, c0t0v=1699, c1t0v=1457" />
             <ComplexConjugate Bounds="-625 665 30 30" Id="1455" />
             <Wire Id="1457" Joints="N(1455:x - iy) h(5) v(10) h(30) B(3) h(200) B(4) N(1454:c1t0v) B(4) v(-25) N(1691:array) B(3) v(420) h(50) B(9) h(250) v(-35) N(1476:c1t0v) B(9) v(-35) N(1745:array)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Multiply Bounds="-135 745 30 30" Id="1459" Terminals="o=1470, c0t0v=1712, c1t0v=1448" />
+            <Multiply Bounds="-135 745 30 30" Id="1459" Terminals="o=1470, c0t0v=1712, c1t0v=1801" />
             <Multiply Bounds="55 870 30 30" Id="1462" Terminals="o=1471, c0t0v=1725, c1t0v=1465" />
             <ComplexConjugate Bounds="-625 830 30 30" Id="1463" />
             <Wire Id="1465" Joints="N(1463:x - iy) h(15) B(1) h(283) v(45) h(62) B(4) N(1462:c1t0v) B(4) v(-30) N(1718:array) B(1) v(590) h(60) B(9) h(270) v(-55) N(1486:c1t0v) B(9) v(-50) N(1770:array)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -159,9 +155,9 @@
             <Comment Bounds="195 555 91.2 28.8" Id="1472" xmlns="http://www.ni.com/MocCommon">
                 <p.Text>~s0,~s2,~s4</p.Text>
             </Comment>
-            <Multiply Bounds="-150 995 30 30" Id="1473" Terminals="o=1496, c0t0v=1739, c1t0v=1444" />
+            <Multiply Bounds="-150 995 30 30" Id="1473" Terminals="o=1496, c0t0v=1739, c1t0v=1786" />
             <Multiply Bounds="-255 1055 30 45" Id="1476" Terminals="o=1495, c0t0v=1751, c1t0v=1457, c2t0v=1523" VerticalChunkCount="3" />
-            <Multiply Bounds="-250 1300 30 30" Id="1483" Terminals="o=1494, c0t0v=1764, c1t0v=1448" />
+            <Multiply Bounds="-250 1300 30 30" Id="1483" Terminals="o=1494, c0t0v=1764, c1t0v=1801" />
             <Multiply Bounds="-245 1360 30 45" Id="1486" Terminals="o=1493, c0t0v=1767, c1t0v=1465, c2t0v=1526" VerticalChunkCount="3" />
             <Add Bounds="305 1120 30 60" Id="1492" Terminals="o=1500, c0t0v=1496, c1t0v=1495, c2t0v=1494, c3t0v=1493" VerticalChunkCount="4" />
             <Wire Id="1493" Joints="N(1486:o) h(107) v(-205) N(1492:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -220,15 +216,14 @@
             <Wire Id="1563" Joints="N(1562:x^2) h(75) v(-75) N(1542:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1565" Joints="N(1535:abs(x\)) h(65) v(-20) N(1562:x)" xmlns="http://www.ni.com/PlatformFramework" />
             <ReshapeArray Bounds="-1650 680 40 40" Id="1578" Terminals="inArray=1621, outArray=1624, c0t0v=1588, c1t0v=1582" VerticalChunkCount="2" />
-            <Literal Bounds="-1809 710 44 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1580" Label="1581" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>128</p.Data>
+            <Literal Bounds="-1804.2 710 39.2 16" DataType="Int32" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1580" Label="1581" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>64</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <TextNode AttachedTo="1580" Bounds="-1809 710 0 0" Id="1581" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1580" Bounds="-1804.2 710 0 0" Id="1581" Text="dimension size" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1582" Joints="N(1580:Out) h(66) B(1) v(-5) N(1585:y) B(1) v(10) h(44) v(-10) N(1578:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <ArraySize Bounds="-1745 635 40 20" Id="1583" />
             <Divide Bounds="-1694 690 30 30" Id="1585" />
-            <Wire Id="1586" Joints="N(1583:size(s\)) h(6) v(45) N(1585:x)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1588" Joints="N(1585:x/y) h(4) B(1) N(1578:c0t0v) B(1) v(-150) N(1591:1589)" xmlns="http://www.ni.com/PlatformFramework" />
             <ForLoop Bounds="-1547 548 468 313" DiagramId="1590" Id="1589">
                 <ForLoop.Iteration Bounds="19 225 15 15" Id="1592" />
@@ -253,25 +248,25 @@
                 <Wire Id="1611" Joints="N(1593:o) h(5) v(30) N(1610:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="1615" Joints="N(1610:c0t2v) N(1614:1590)" xmlns="http://www.ni.com/PlatformFramework" />
                 <ArrayIndex Bounds="260 165 40 40" Id="1618" Rank="2" Terminals="array=1619, c0t0v=1620, c0t1v, c0t2v=1625" />
-                <Wire Id="1619" Joints="N(1608:1590) h(139) B(1) h(75) v(5) h(33) v(25) N(1610:array) B(1) v(85) h(105) v(35) N(1618:array)" xmlns="http://www.ni.com/PlatformFramework" />
+                <Wire Id="1619" Joints="N(1608:1590) h(139) B(1) h(108) v(30) N(1610:array) B(1) v(85) h(105) v(35) N(1618:array)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="1620" Joints="N(1604:x+1) N(1618:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
                 <Wire Id="1625" Joints="N(1618:c0t2v) N(1626:1590)" xmlns="http://www.ni.com/PlatformFramework" />
                 <ForLoop.Count Bounds="1 1 15 15" Docking="Left" Id="1591" Terminals="1589=1588, 1590" />
                 <ForLoop.Tunnel Bounds="-5 47 13 10" Docking="Left" Id="1608" Terminals="1589=1624, 1590=1619" />
-                <ForLoop.Tunnel Bounds="458 97 13 10" Docking="Right" Id="1614" Terminals="1589=1444, 1590=1615" />
-                <ForLoop.Tunnel Bounds="458 187 13 10" Docking="Right" Id="1626" Terminals="1589=1445, 1590=1625" />
+                <ForLoop.Tunnel AutoIndex="True" Bounds="458 97 13 10" Docking="Right" Id="1614" Terminals="1589=1779, 1590=1615" />
+                <ForLoop.Tunnel AutoIndex="True" Bounds="458 187 13 10" Docking="Right" Id="1626" Terminals="1589=1790, 1590=1625" />
             </ForLoop>
             <Wire Id="1621" Joints="N(620:Value) h(5) v(15) h(20) B(3) N(1578:inArray) B(3) v(-45) N(1583:array)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1624" Joints="N(1578:outArray) h(5) v(-85) N(1608:1589)" xmlns="http://www.ni.com/PlatformFramework" />
             <ArraySize Bounds="-1740 895 40 20" Id="1629" />
             <Wire Id="1630" Joints="N(626:Value) h(35) B(1) N(1629:array) B(1) v(60) N(1636:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
             <Divide Bounds="-1670 965 30 30" Id="1631" />
-            <Wire Id="1632" Joints="N(1629:size(s\)) h(23) v(60) N(1631:x)" xmlns="http://www.ni.com/PlatformFramework" />
-            <Literal Bounds="-1839.8 990 44 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1633" Label="1634" xmlns="http://www.ni.com/MocCommon">
-                <p.Data>0x4060000000000000</p.Data>
+            <Wire Id="1632" Joints="N(1629:size(s\)) h(5) B(1) h(18) v(60) N(1631:x) B(1) v(135) N(1808:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Literal Bounds="-1835 990 39.2 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1633" Label="1634" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4050000000000000</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <TextNode AttachedTo="1633" Bounds="-1839.8 990 0 0" Id="1634" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="1633" Bounds="-1835 990 0 0" Id="1634" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1635" Joints="N(1633:Out) h(5) v(-10) h(90.80005) B(3) N(1631:y) B(3) v(15) h(65) v(-10) N(1636:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <ReshapeArray Bounds="-1625 955 40 40" Id="1636" Terminals="inArray=1630, outArray=1662, c0t0v=1638, c1t0v=1635" VerticalChunkCount="2" />
             <Wire Id="1638" Joints="N(1631:x/y) h(10) B(1) N(1636:c0t0v) B(1) v(-105) N(1642:1640)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -303,8 +298,8 @@
                 <Wire Id="1669" Joints="N(1653:c0t2v) N(1670:1641)" xmlns="http://www.ni.com/PlatformFramework" />
                 <ForLoop.Count Bounds="1 1 15 15" Docking="Left" Id="1642" Terminals="1640=1638, 1641" />
                 <ForLoop.Tunnel Bounds="-5 87 13 10" Docking="Left" Id="1663" Terminals="1640=1662, 1641=1657" />
-                <ForLoop.Tunnel Bounds="370 147 13 10" Docking="Right" Id="1667" Terminals="1640=1450, 1641=1666" />
-                <ForLoop.Tunnel Bounds="370 57 13 10" Docking="Right" Id="1670" Terminals="1640=1448, 1641=1669" />
+                <ForLoop.Tunnel AutoIndex="True" Bounds="370 147 13 10" Docking="Right" Id="1667" Terminals="1640=1804, 1641=1666" />
+                <ForLoop.Tunnel AutoIndex="True" Bounds="370 57 13 10" Docking="Right" Id="1670" Terminals="1640=1807, 1641=1669" />
             </ForLoop>
             <Wire Id="1662" Joints="N(1636:outArray) N(1663:1640)" xmlns="http://www.ni.com/PlatformFramework" />
             <ArraySize Bounds="-265 480 40 20" Id="1672" />
@@ -393,15 +388,15 @@
             </MethodCall>
             <Wire Id="1716" Joints="N(1397:c3t0v) h(7) v(75) h(198) B(3) h(85) B(4) h(5) v(-30) N(1406:x + iy) B(4) v(255) h(510) v(-5) N(1714:L0) B(3) v(-225) N(1535:x)" xmlns="http://www.ni.com/PlatformFramework" />
             <ArraySize Bounds="-230 855 40 20" Id="1718" />
-            <Divide Bounds="-155 835 30 30" Id="1719" />
-            <Wire Id="1720" Joints="N(1718:size(s\)) h(13) v(-30) N(1719:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Divide Bounds="-175 835 30 30" Id="1719" />
+            <Wire Id="1720" Joints="N(1718:size(s\)) h(5) v(-30) N(1719:x)" xmlns="http://www.ni.com/PlatformFramework" />
             <Literal Bounds="-229.999985 835 39.2 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1721" Label="1723" xmlns="http://www.ni.com/MocCommon">
                 <p.Data>0x4050000000000000</p.Data>
                 <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
             </Literal>
-            <Wire Id="1722" Joints="N(1721:Out) h(5) v(15) N(1719:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1722" Joints="N(1721:Out) h(5.00001526) v(15) N(1719:y)" xmlns="http://www.ni.com/PlatformFramework" />
             <TextNode AttachedTo="1721" Bounds="-229.999985 835 0 0" Id="1723" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-            <Wire Id="1724" Joints="N(1719:x/y) h(10) v(-15) N(1714:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1724" Joints="N(1719:x/y) h(30) v(-15) N(1714:L2)" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1725" Joints="N(1714:R0) h(110) v(60) N(1462:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
             <MethodCall Bounds="-220 935 50 50" Id="1726" Target="Repeat\.gvi">
                 <p.MethodDeclaration>
@@ -499,6 +494,35 @@
             <Wire Id="1774" Joints="N(1773:Out) h(5) v(15) N(1771:y)" xmlns="http://www.ni.com/PlatformFramework" />
             <TextNode AttachedTo="1773" Bounds="-515 1360 0 0" Id="1775" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
             <Wire Id="1776" Joints="N(1771:x/y) h(35) v(-10) N(1766:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ReshapeArray Bounds="-1030 605 40 30" Id="1778" Terminals="inArray=1779, outArray=1786, c0t0v=1794" />
+            <Wire Id="1779" Joints="N(1614:1589) h(5) v(-40) N(1778:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1786" Joints="N(1778:outArray) h(200) v(-10) h(260) B(3) h(265) v(-95) h(-5) v(-20) B(7) N(1672:array) B(7) v(-10) h(90) v(-30) N(1452:c1t0v) B(3) v(415) h(160) B(14) N(1473:c1t0v) B(14) v(-40) N(1733:array)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1788" Joints="N(1789:outArray) h(5) v(-45) N(1455:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ReshapeArray Bounds="-1040 720 40 30" Id="1789" Terminals="inArray=1790, outArray=1788, c0t0v=1794" />
+            <Wire Id="1790" Joints="N(1626:1589) h(5) v(-15) N(1789:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1793" Joints="N(1583:size(s\)) h(6) v(15) B(2) h(-56) v(-140) N(1795:x) B(2) v(30) N(1585:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1794" Joints="N(1795:x/y) h(680) v(45) B(2) h(-10) v(165) N(1789:c0t0v) B(2) v(50) N(1778:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Divide Bounds="-1745 520 30 30" Id="1795" />
+            <Literal Bounds="-1820 530 39.2 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1798" Label="1799" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4000000000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="1798" Bounds="-1820 530 0 0" Id="1799" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1800" Joints="N(1798:Out) h(5) v(5) N(1795:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1801" Joints="N(1806:outArray) h(55) v(-90) h(310) v(-70) h(50) B(5) h(250) B(6) N(1459:c1t0v) B(6) v(-25) N(1706:array) B(5) v(555) h(115) B(11) N(1483:c1t0v) B(11) v(-45) N(1758:array)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1802" Joints="N(1803:outArray) h(5) v(-15) h(210) v(-175) N(1463:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ReshapeArray Bounds="-1085 1030 40 30" Id="1803" Terminals="inArray=1804, outArray=1802, c0t0v=1813" />
+            <Wire Id="1804" Joints="N(1667:1640) h(69) v(15) N(1803:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ReshapeArray Bounds="-1100 920 40 30" Id="1806" Terminals="inArray=1807, outArray=1801, c0t0v=1813" />
+            <Wire Id="1807" Joints="N(1670:1640) h(5) v(-5) N(1806:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Divide Bounds="-1650 1040 30 30" Id="1808" />
+            <Literal Bounds="-1795 1060 39.2 16" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="1810" Label="1811" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4000000000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="1810" Bounds="-1795 1060 0 0" Id="1811" Text="y" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1812" Joints="N(1810:Out) h(5) v(-5) N(1808:y)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="1813" Joints="N(1808:x/y) h(5) v(80) h(525) v(-50) B(4) h(-15) v(-140) N(1806:c0t0v) B(4) v(-30) N(1803:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
         </BlockDiagram>
         <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
             <Cluster BaseName="[string]Error In" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="101" Label="[UIModel]138" Left="[float]349" Top="[float]33" Value="{DataItemBinding Id=99}" Width="[float]138">
